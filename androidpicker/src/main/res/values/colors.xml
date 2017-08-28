@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/c1_1</color>
+    <color name="colorPrimaryDark">@color/c1_2</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="status_bar_color">@color/c4_3</color>
+    <color name="toolbar_color">@color/c4_3</color>
+    <color name="toolbar_title_color">@color/c3_1</color>
+    <color name="toolbar_text_btn_color">@color/c3_2</color>
+    <color name="toolbar_text_btn_disabled_color">@color/c3_5</color>
+
+    <color name="global_background_color">@color/c4_2</color>
+    <color name="global_divider_color">@color/c4_5</color>
+
+    <!--不透明度转16进制，0是完全透明，100是完全不透明
+    5 - 0D
+    10 - 19
+    20 - 32
+    30 - 4C
+    40 - 64
+    50 - 7F
+    60 - 99
+    70 - AF
+    80 - CC
+    90 - E5
+    -->
+
+    <color name="c1_1">#ffff8023</color>
+    <color name="c1_1_80">#CCff8023</color>
+    <color name="c1_1_20">#32ff8023</color>
+    <color name="c1_1_30">#4Cff8023</color>
+    <color name="c1_1_60">#99ff8023</color>
+
+    <color name="c1_2">#fff0761d</color>
+    <color name="c1_2_60">#99f0761d</color>
+
+    <color name="c2_1">#ffff9727</color>
+    <color name="c2_2">#ffffc947</color>
+    <color name="c2_3">#ffc59069</color>
+    <color name="c2_4">#ffff8585</color>
+    <color name="c2_5">#ff7cdb5a</color>
+
+    <color name="c3_1">#ff282828</color>
+    <color name="c3_2">#ff3a3a3a</color>
+    <color name="c3_3">#ff505050</color>
+    <color name="c3_4">#ff777777</color>
+    <color name="c3_5">#ff9c9c9c</color>
+    <color name="c3_6">#ffbbbbbb</color>
+    <color name="c3_7">#ffcccccc</color>
+
+    <color name="c4_1">#ffffffff</color>
+    <color name="c4_2">#fff5f6f7</color>
+    <color name="c4_3">#fffafafa</color>
+    <color name="c4_4">#ffededed</color>
+    <color name="c4_5">#ffdcdcdc</color>
+    <color name="c4_6">#fff0f0f0</color>
+    <color name="c4_6_50">#7ff0f0f0</color>
+
+</resources>

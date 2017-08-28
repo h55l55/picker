@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- UI全局规范尺寸 -->
+
+    <!-- 全局状态栏、Tab栏、导航栏高度 -->
+    <dimen name="global_bar_height">48dp</dimen>
+
+    <!-- 主要按钮的高度，如确认按钮 -->
+    <dimen name="primary_button_height">29dp</dimen>
+
+    <!-- 主要按钮的水平padding -->
+    <dimen name="primary_button_padding_horizontal">15dp</dimen>
+
+    <!-- 较大按钮的高度，如登录按钮 -->
+    <dimen name="large_button_height">42dp</dimen>
+
+    <!-- 较大按钮的宽度，如登录按钮 -->
+    <dimen name="large_button_width">330dp</dimen>
+
+    <!-- 按钮通用圆角大小 -->
+    <dimen name="global_button_corner_radius">4dp</dimen>
+
+    <!-- 全局的水平边距 -->
+    <dimen name="global_margin_horizontal">15dp</dimen>
+
+    <!-- 全局的模块间距 -->
+    <dimen name="global_margin_model">15dp</dimen>
+
+    <!-- 全局的分割线宽度 -->
+    <dimen name="global_divider_width">0.67dp</dimen>
+
+    <!-- 全局的文本内容间距 -->
+    <dimen name="global_text_margin_horizontal">5dp</dimen>
+
+    <!-- 网络错误页图片上间距 -->
+    <dimen name="error_view_margin_top">90dp</dimen>
+
+    <!-- 网络错误页图片大小 -->
+    <dimen name="error_view_image_width">144dp</dimen>
+
+    <!-- 字体 -->
+    <dimen name="t1">18sp</dimen>
+    <dimen name="t2">17sp</dimen>
+    <dimen name="t3">16sp</dimen>
+    <dimen name="t4">15sp</dimen>
+    <dimen name="t5">14sp</dimen>
+    <dimen name="t6">13sp</dimen>
+    <dimen name="t7">12sp</dimen>
+    <dimen name="t8">11sp</dimen>
+    <dimen name="t9">10sp</dimen>
+    <dimen name="t10">9sp</dimen>
+
+    <!-- 具体页面相关尺寸 -->
+
+    <!-- 首页底部Tab图标大小 -->
+    <dimen name="home_tab_icon_size">23dp</dimen>
+
+
+</resources>
