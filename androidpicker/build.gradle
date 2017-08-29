@@ -2,22 +2,22 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-// This is the library version used when deploying the
-//artifactversion = "1.0.0"
-
+version="1.0.0"
+//这个地方比对一下自己的项目
 android {
-    compileSdkVersion 26
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 26
+        minSdkVersion 23
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
+    //这个地方不需要改
     buildTypes {
         release {
             minifyEnabled false
@@ -31,34 +31,34 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:appcompat-v7:25.2.0'
     testCompile 'junit:junit:4.12'
 }
 
-def siteUrl = 'https://github.com/venshine/AndroidCommon'      // Homepage URL of the library
-def gitUrl = 'https://github.com/venshine/AndroidCommon.git'   // Git repository URL
-group = "com.wx.android.common"        // Maven Group ID for the artifact
+def siteUrl = 'https://github.com/h55l55/picker'      // 项目的主页
+def gitUrl = 'https://github.com/h55l55/picker.git'   // Git仓库的url
+group = "com.wscq.picker"       // Maven Group ID for the artifact，一般填你唯一的包名
 
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
         pom {
             project {
-                packaging 'aar'                // Add your description here
-                name 'AndroidCommon'
-                description 'Android Common Library'
-                url siteUrl                // Set your license
+                packaging 'aar'
+                // Add your description here
+                name 'a dialog picker'     //项目描述
+                url siteUrl
+                // Set your license
                 licenses {
                     license {
-                        name 'The Apache Software License, Version 2.0'
-                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        //
                     }
                 }
                 developers {
                     developer {
-                        id 'venshine'
-                        name 'venshine'
-                        email 'venshine.cn@gmail.com'
+                        id 'yingda.hu'        //填写的一些基本信息
+                        name 'yingda'
+                        email 'huwenyon@gmail.com'
                     }
                 }
                 scm {
@@ -70,6 +70,7 @@ install {
         }
     }
 }
+//下面这些我也不知道是什么意思，参考大神的于是就复制过来了
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier = 'sources'
@@ -82,15 +83,11 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
 }
-javadoc {
-    options {
-        encoding "UTF-8"
-    }
-}
 artifacts {
     archives javadocJar
     archives sourcesJar
 }
+
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 bintray {
@@ -98,11 +95,12 @@ bintray {
     key = properties.getProperty("bintray.apikey")
     configurations = ['archives']
     pkg {
-        repo = "maven"        // it is the name that appears in bintray when logged
-        name = "AndroidCommon"
+        userOrg = "h55l55"//JCenter上创建的的Organization
+        repo = "AndroidDialogPicker"//你要上传的库的名字
+        name = "AndoridPicker"    //发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
-        licenses = ["Apache-2.0"]
+        licenses = ["MIT"]
         publish = true
     }
 }

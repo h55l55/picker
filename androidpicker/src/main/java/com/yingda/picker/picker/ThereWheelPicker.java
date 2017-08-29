@@ -215,7 +215,6 @@ public class ThereWheelPicker implements CanShow, OnWheelChangedListener {
         int pCurrent = firstWheelView.getCurrentItem();
         firstWheelName = allFirstDataList.get(pCurrent);
         List<PickerModel> secondList = getSecondList();
-
         WheelPickerAdapter wheelPickerAdapter = new WheelPickerAdapter(secondList, context);
         secondWheelView.setViewAdapter(wheelPickerAdapter);
 
