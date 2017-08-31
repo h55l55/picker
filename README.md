@@ -113,4 +113,4 @@
        }
    ```
 
-   效果图如下：![device-2017-08-30-180558](/Users/wenyong.hu/Desktop/device-2017-08-30-180558.png)
+   效果图如下：![时间选择器](https://github.com/h55l55/picker/blob/master/device-2017-08-30-180558.png)
