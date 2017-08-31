@@ -34,29 +34,29 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.hqyxjy.picker.wheel.WheelView
+            <com.yingda.picker.wheel.WheelView
                 android:id="@+id/first_wheel_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
-            </com.hqyxjy.picker.wheel.WheelView>
+            </com.yingda.picker.wheel.WheelView>
 
-            <com.hqyxjy.picker.wheel.WheelView
+            <com.yingda.picker.wheel.WheelView
                 android:id="@+id/second_wheel_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
-            </com.hqyxjy.picker.wheel.WheelView>
+            </com.yingda.picker.wheel.WheelView>
 
-            <com.hqyxjy.picker.wheel.WheelView
+            <com.yingda.picker.wheel.WheelView
                 android:id="@+id/third_wheel_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
-            </com.hqyxjy.picker.wheel.WheelView>
+            </com.yingda.picker.wheel.WheelView>
         </LinearLayout>
 
         <View

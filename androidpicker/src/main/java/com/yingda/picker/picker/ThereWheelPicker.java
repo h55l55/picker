@@ -129,7 +129,7 @@ public class ThereWheelPicker implements CanShow, OnWheelChangedListener {
         }
 
         //如果第二级数据下没有下级数据，则只显示两级数据
-        if (models.get(0).getModels().get(0).getModels() == null) {
+        if (((PickerModel) models.get(0).getModels().get(0)).getModels() == null) {
             onlyShowTwoWheel = true;
         }
 
@@ -279,7 +279,7 @@ public class ThereWheelPicker implements CanShow, OnWheelChangedListener {
     private PickerModel getSecondName(int pCurrent) {
         for (PickerModel pickerModel : allFirstDataList) {
             if (pickerModel.getName().contains(firstWheelName.getName())) {
-                return pickerModel.getModels().get(pCurrent);
+                return (PickerModel) pickerModel.getModels().get(pCurrent);
             }
         }
         return new PickerModel();
@@ -306,7 +306,7 @@ public class ThereWheelPicker implements CanShow, OnWheelChangedListener {
     private PickerModel getThirdName(int pCurrent) {
         for (PickerModel pickerModel : allSecondDataList) {
             if (pickerModel.getName().contains(secondWheelName.getName())) {
-                return pickerModel.getModels().get(pCurrent);
+                return (PickerModel) pickerModel.getModels().get(pCurrent);
             }
         }
         return new PickerModel();

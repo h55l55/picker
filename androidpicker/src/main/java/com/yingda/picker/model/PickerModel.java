@@ -6,9 +6,10 @@ import java.util.List;
  * Created by wenyong.hu on 2017/8/2.
  */
 
-public class PickerModel {
+public class PickerModel<T> {
     private String name = "";
     private List<PickerModel> models;
+    private T t;
 
     public PickerModel() {
     }
@@ -31,5 +32,13 @@ public class PickerModel {
 
     public void setModels(List<PickerModel> models) {
         this.models = models;
+    }
+
+    public T getT() {
+        return t;
+    }
+
+    public void setT(T t) {
+        this.t = t;
     }
 }
